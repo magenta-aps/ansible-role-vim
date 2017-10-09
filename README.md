@@ -6,10 +6,11 @@ Installs the excellent Vim text editor
 Usage
 -----
 
-To utilize this role, add it as a submodule to the roles folder of ansible:
+To utilize this role, add it to the `requirements.yml` file inside the ansible folder:
 
-    cd ansible/roles/
-    git submodule add git@github.com:magenta-aps/ansible-role-vim.git vim
+    - src: git+https://github.com/magenta-aps/ansible-role-vim.git
+      version: master
+      name: vim
 
 Requirements
 ------------
